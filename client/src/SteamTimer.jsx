@@ -31,10 +31,14 @@ const SteamTimer = () => {
   })
 
   return (
-    <div className="count-down">
-      <div>The next Steam sale is on Feb 21, 2022</div>
-      <Countdown date={Date.now() + Number(time)} renderer={renderer}/>
+    <div className="Steam-count-down">
+      <span id="steam-count-down-title">Time until next Steam Sale on 2/21/2021</span>
+      <div className="count-down">
+        <Countdown date={Date.now() + Number(time)} renderer={renderer}/>
+      </div>
+      <img id="count-down-img" src="https://thumbs.gfycat.com/AromaticRemoteAlbino-size_restricted.gif" />
     </div>
+
   )
 }
 

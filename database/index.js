@@ -10,10 +10,11 @@ const steamSchema = mongoose.Schema({
 const Steam = mongoose.model('Steam', steamSchema);
 
 const xgpSchema = mongoose.Schema({
-  name:String
+  name:String,
+  id:String
 })
 
-const XPG =mongoose.model('XPG', xgpSchema);
+const XGP = mongoose.model('XGP', xgpSchema);
 
 module.exports.Steam = Steam;
-module.exports.XPG = XPG;
+module.exports.XGP = XGP;

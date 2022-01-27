@@ -22,8 +22,62 @@
   color: aliceblue;
 }
 
+#steam-title {
+  color:lightblue;
+}
+
+#XGP-title {
+  color: rgb(12, 247, 3);
+}
+
+#XGP-title:hover {
+  cursor: pointer;
+}
+
+#xgp-price {
+  color: rgb(12, 247, 3);
+  font-size: 40px;
+  margin-left: 51%;
+  margin-top: 350px;
+  position: absolute;
+  border:5px solid rgb(12, 247, 3);
+  height: 70px;
+  width: 450px;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: grey;
+}
+
+#steam-title:hover{
+  cursor: pointer;
+}
+
+.Steam-count-down{
+  position: absolute;
+  margin-left: 21%;
+  margin-top: 300px;
+}
+
+#count-down-img {
+  height:150px;
+  width: 300px;
+}
+
+#steam-count-down-title {
+  font-size: 30px;
+  color: lightblue;
+}
+
 .count-down {
-  color: white;
+  color: lightblue;
+  border-color: lightblue;
+  font-size: 50px;
+  height: 60px;
+  width: 300px;
+  padding: 15px;
+  margin:auto;
+  border-radius: 10px;
+  border:5px solid lightblue ;
 }
 
 #leftHalf {

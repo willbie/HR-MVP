@@ -1,10 +1,9 @@
-const Steam = require('../../database/index.js');
-const XPG = require('../../database/index.js');
+const db = require('../../database/index.js');
 const axios = require('axios');
 
 const getSteamDetail = (req, res) => {
   var gamename = req.query.name;
-  Steam.Steam.find({
+  db.Steam.find({
     'name': gamename
   })
   .then((result) => {

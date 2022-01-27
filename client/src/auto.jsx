@@ -61,7 +61,7 @@ const Auto = () => {
         <input
           id="auto"
           onClick={() => setDisplay(!display)}
-          placeholder="To be honest, nobody plays PC game now, right?"
+          placeholder="Who still plays PC games now days? Do you guys not have phones?"
           onChange={event => setSearch(event.target.value)}
         /><button onClick={() => updateGameDex(search)} id="search-button">search</button>
         {display && (
