@@ -67,7 +67,7 @@ const Auto = () => {
         {display && (
           <div className="autoContainer">
             {options
-              .filter((game) => game.name.indexOf(search) > -1)
+              .filter((game) => game.name.toLowerCase().indexOf(search.toLowerCase()) > -1)
               .slice(0, 10)
               .map((game) => {
                 return (
