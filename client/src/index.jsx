@@ -32,11 +32,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div id="leftHalf"></div>
-        <div id="rightHalf"></div>
+      <div id="leftHalf"></div>
+      <div id="rightHalf"></div>
         <div className="title"><span id="steam-title" onClick={this.steamTimerOnclick.bind(this)}>Steam</span> <span id="XGP-title" onClick={this.XGPPriceOnclick.bind(this)}>XGP</span></div>
-        {this.state.steamTimer? <SteamTimer /> : null}
-        {this.state.XGPPrice? <div id="xgp-price">$9.99 per month for PC</div>:null}
+        {/* {this.state.steamTimer? <SteamTimer /> : null}
+        {this.state.XGPPrice? <div id="xgp-price">$9.99 per month for PC</div>:null} */}
         <Auto />
       </div>
     )

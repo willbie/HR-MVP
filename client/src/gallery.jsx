@@ -19,8 +19,8 @@ const Gallery = ({ photos }) => {
           <Carousel
             data={data}
             time={5000}
-            width="850px"
-            height="500px"
+            width="100%"
+            height="66%"
             captionStyle={captionStyle}
             radius="10px"
             slideNumber={true}
