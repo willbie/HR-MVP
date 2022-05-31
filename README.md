@@ -1,4 +1,5 @@
 # STEAM OR XGP
 
-https://user-images.githubusercontent.com/91838764/171231909-914aa201-c70f-47e5-bc46-322fc5039f8b.mp4
 
+
+![SXPG1](https://user-images.githubusercontent.com/91838764/171232378-5685e013-5941-4380-a742-3b0521c2d3fd.gif)
