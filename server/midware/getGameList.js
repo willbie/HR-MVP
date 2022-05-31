@@ -8,7 +8,9 @@ const getSteamAppList = (req, res) => {
     // for (var i = 4; i < result.length; i++) {
     //   data.push(result[i].name);
     // }
-    res.send(result.slice(8, -1));
+    let data = result.slice(14, -1);
+    res.send(data);
+    // console.log(data);
     }
   )
   .catch((err) => {
@@ -18,7 +20,7 @@ const getSteamAppList = (req, res) => {
 
 const getSteamImage = (req, res) => {
   var id = req.query.id;
-  var invalidImage = "https://media.istockphoto.com/vectors/missing-rubber-stamp-vector-vector-id1213374148?k=20&m=1213374148&s=612x612&w=0&h=A3_Ku27Jf_XRfsWCZYvwJWQGNR2hbHDh9ViLLaAdJ5w=";
+  var invalidImage = "https://catalog.gamepass.com/sigls/v2?id=fdd9e2a7-0fee-49f6-ad69-4354098401ff&language=en-us&market=US";
   db.Steam.find({"appid":id})
   .then((result) => {
     if (result[0].header_image.length === 0) {

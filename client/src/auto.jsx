@@ -19,6 +19,8 @@ const Auto = () => {
     })
   },[])
 
+  const initialData = [{name: "Among Us", appid:945360}, {name: "The Elder Scrolls V: Skyrim", appid:72850}, {name: "Counter-Strike: Global Offensive", appid:730}, {name: "Dota 2", appid:570},{name: "Forza Horizon 5", appid:1551360},{name: "Halo Infinite", appid:1240440}]
+
   useEffect(() => {
     window.addEventListener("mousedown", handleClickOutside);
     return () => {
@@ -69,7 +71,7 @@ const Auto = () => {
         {/* <button onClick={() => updateGameDex(search)} id="search-button">search</button> */}
         {display && (
           <div className="autoContainer">
-            {options
+            {search? options
               .filter((game) => game.name.toLowerCase().indexOf(search.toLowerCase()) > -1)
               .slice(0, 10)
               .map((game) => {
@@ -85,7 +87,19 @@ const Auto = () => {
                   </div>
                 )
               })
-            }
+            : initialData.map((game) => {
+              return (
+                <div
+                  onClick={() => updateGameDex(game.name)}
+                  className="option"
+                  tabIndex="0"
+                >
+                  {getHeaderImage(game.appid)}
+                  {<img className="auto-image" id={game.appid}/>}
+                  <span>{game.name}</span>
+                </div>
+              )
+            })}
           </div>
         )}
         </div>

@@ -93,17 +93,17 @@ body {
   background-repeat: repeat;
   width: 50%;
   position: absolute;
+  height: 3000px;
   left: 0px;
-  height: 100%;
   z-index: -1;
 }
 #rightHalf {
   background: url("/Users/houhengli/Downloads/xboximage.jpeg");
   background-repeat: repeat;
+  height: 3000px;
   width: 100%;
   position: absolute;
   right: 0px;
-  height: 100%;
   z-index: -2;
 }
 
