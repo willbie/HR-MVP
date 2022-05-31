@@ -58,12 +58,15 @@ const Auto = () => {
   return (
     <div className="container">
       <div className="search">
-        <input
-          id="auto"
-          onClick={() => setDisplay(!display)}
-          placeholder="Who still plays PC games now days? Do you guys not have phones?"
-          onChange={event => setSearch(event.target.value)}
-        /><button onClick={() => updateGameDex(search)} id="search-button">search</button>
+        <div className="searchBar">
+          <input
+            id="auto"
+            onClick={() => setDisplay(!display)}
+            placeholder="Who still plays PC games now days? Do you guys not have phones?"
+            onChange={event => setSearch(event.target.value)}
+          />
+
+        {/* <button onClick={() => updateGameDex(search)} id="search-button">search</button> */}
         {display && (
           <div className="autoContainer">
             {options
@@ -85,9 +88,9 @@ const Auto = () => {
             }
           </div>
         )}
-
-
+        </div>
       </div>
+
       <Detail detail={detailInfo}/>
     </div>
   )

@@ -108,15 +108,22 @@ body {
 }
 
 .search {
-  height: 880px;
+  text-align: center;
+  margin-top: 30%;
+  margin-bottom: 10%;
+}
+
+.searchBar {
+  margin:30%,0px, 0px, 0px;
+  display: grid;
 }
 
 #auto {
   height:50px;
   width:600px;
-  margin:30% 10px 0px 10px;
   border-radius: 25px;
   border-color: grey;
+  margin-left: 30%;
 }
 
 #search-button {
@@ -127,14 +134,15 @@ body {
 }
 
 .autoContainer {
-  background-color: aliceblue;
+  background-color: white;
   width:600px;
-  margin-left: 31%;
   text-align: left;
+  /* grid-column: span; */
+  margin-left: 30%;
   border: 0px 10px 10px 10px;
   border-radius: 10px;
   z-index: 999;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .option{
